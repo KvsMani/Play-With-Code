@@ -4,445 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css">
     <link rel="icon" href="logo.png">
-    <link rel="stylesheet" href="courses.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
-    <title>Courses Offered</title>
+    <script src="https://kit.fontawesome.com/fd38482e0d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Play With Code</title>
 </head>
 <body>
-  <nav class="fixed w-full bg-blend-screen flex shadow-xl justify-between items-center h-24 px-10 md:px-28 ">
-    <div class="md:p-5">
-      <a href="index.html">  <img src="logo.png" class="md:w-24 w-16 flex items-center justify-center"> </a>
-    </div>
-    
-    <div class="hidden md:flex items-center space-x-1">
-        <a href="index.html"
-           class="py-4 px-2  font-bold text-cyan-400  hover:border-b-4 hover:border-white hover:text-white transition duration-300">
-             Home
-        </a>
-       <a href="privacy.html"
-         class="py-4 px-2  font-bold text-cyan-400  hover:border-b-4 hover:border-white hover:text-white transition duration-300">
-         Privacy Policy
-       </a>
-        <a href="https://discord.gg/YPhrFGhajN" target="_blank"
-           class="py-4 px-2  font-bold text-cyan-400  hover:border-b-4 hover:border-white hover:text-white transition duration-300">
-           Discord
-         </a>
-         <a href="https://forms.gle/qAiKSvktFuh7Lz1d8"
-           class="py-4 px-2  font-bold text-cyan-400  hover:border-b-4 hover:border-white hover:text-white transition duration-300" target="_blank">
-           Register
-          </a>
-       </div>
-       <div class="md:hidden flex items-center">
-        <button class="outline-none menu-button">
-            <svg class="w-6 h-6 "
-             x-show="! showMenu"
-             fill="none"
-             stroke-linecap="round"
-             stroke-linejoin="round"
-             stroke-width="2"
-             viewBox="0 00 24 24"
-             stroke="currentColor"><path d="m4 6h16M4 12h16M4 18h16"><path></svg>
-        </button>
-    </div>
-   
-    
-</nav>
-<div class="hidden pt-10 bg-transparent mobile-menu">
-    <ul class="p-10 flex flex-col text-xl text-white font-bold items-center justify-center w-screen">
-      <li class=" p-4 w-44 flex items-center justify-center  hover:border-b-4 hover:border-cyan-400">
-        <a href="/index.html" class="block  "
-          >Home
-        </a>
-      </li>
-      <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-cyan-400">
-        <a
-          href="https://discord.com/invite/YPhrFGhajN"
-          class="block.text-sm.px-2.py-4 transition duration-300" target="_blank"
-        >
-          Discord
-        </a>
-      </li>
-      <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-cyan-400">
-        <a  href="privacy.html" 
-          class="block.text-sm.px-2.py-4  transition duration-300" >
-          Privacy Policy 
-        </a>
-      </li>
-      <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-cyan-400">
-        <a target="_blank" href="https://forms.gle/qAiKSvktFuh7Lz1d8" 
-          class="block.text-sm.px-2.py-4  transition duration-300" >
-          Register
-        </a>
-      </li>
-    </ul>
-  </div>
-<script>
-    const btn = document.querySelector('button.menu-button');
-    const menu = document.querySelector('.mobile-menu');
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
-    <div class="items-center justify-center  flex-col pt-28 p-9 gap-4">
-        <div class="border border-black bg-white shadow-2xl  rounded-xl  p-1 md:w-100">
-
-
-
-
-          <div id="default-carousel" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 w-full overflow-hidden rounded-lg md:h-96">
-                 <!-- Item 1 -->
-                <div class=" duration-700 ease-in-out" data-carousel-item>
-                    <img src="1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 4 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 5 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-              </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="6.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="7.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-              </div>
-              
-          
-            </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
-            
-              </div>
-            <!-- Slider controls -->
-            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
-          </div>
-          
-                  
-                </section>
-
-            <!--
-            <section id="Catalog" class="p-5">
-              <div class="">
-                  <div>
-                      <h1 class="text-7xl text-center font-bold">Courses Offered</h1>
-                  </div>
-                  <div class="flex py-2 justify-center items-center">
-                      <hr class="w-32  border-red-500 border-4">
-                  </div> <br><br>
-                  <div class="md:flex text-center items-center justify-center">
+    <header>
+        <nav class="bg-white border-gray-200 px-4 lg:px-16 py-2.5  dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center h-16 px-1 mx-auto max-w-screen-xl">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo.png" class="mr-3 w-16 h-16 sm:h-16" alt="playwithcode1c Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Play With Code</span>
+                </a>
+                <div class="flex items-center lg:order-2">
                     
-                      <img src="python.png" class="w-1/2 rounded-lg  shadow-xl">
-                      <div class="text-justify flex flex-col items-center justify-center">
-                        <h1 class="text-3xl font-bold " >Python</h1>
-                          <p class=" p-10">Python is a powerful and versatile programming language known for its simplicity, readability, and extensive libraries. Its flexibility, coupled with its active community, has made it a popular choice among developers for a wide range of applications.</p>
-                          <a href="">
-                          <div class=" w-56 h-16 items-center bg-indigo-400 rounded-lg text-white font-bold justify-center flex transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300">
-                              <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank">Register Now</a>
-                              <div class="w-10 h-10 flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 font-bold h-6">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                </svg>
-                              </div>
-                          </div>
-                          </a>
-                      </div>
-                  </div>
-              </div>           
-          </section> 
-            
-          <section id="Catalog" class="p-5">
-            <div class="">
-                <div>
-                    
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
                 </div>
-                <div class="flex py-2 justify-center items-center">
-                    
-                </div> <br><br>
-                <div class="md:flex text-center items-center justify-center">
-                  
-                    <img src="html.png" class="w-1/2 rounded-lg  shadow-xl">
-                    <div class="text-justify flex flex-col items-center justify-center">
-                      <h1 class="text-3xl font-bold " >Web Development & Design</h1>
-                        <p class=" p-10">Web development and design involve the creation and maintenance of websites and web applications. It combines the technical skills of programming with the creative aspects of design to build functional and visually appealing online experiences.</p>
-                        <a href="">
-                        <div class=" w-56 h-16 items-center bg-indigo-400 rounded-lg text-white font-bold justify-center flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300">
-                            <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank">Register Now</a>
-                            <div class="w-10 h-10 flex items-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 font-bold h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                              </svg>
+                <div class="hidden justify-between bg-[#1F2937] items-center w-full lg:flex lg:w-auto lg:order-1 z-50" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                        </li>
+                        <li>
+                            <a href="courses.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Courses</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" target="_blank">Register</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/YPhrFGhajN" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" target="_blank">Discord</a>
+                        </li>
+                        <li>
+                            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                                
+                                
+                                <a href="https://www.instagram.com/playwithcode1c" target="_blank" class="text-x1 text-gray-500  hover:text-gray-900 dark:hover:text-white">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/play-with-code" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <i class="ri-linkedin-line"></i>
+                                </a>
+                                <a href="https://discord.gg/YPhrFGhajN" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <i class="ri-discord-fill"></i>
+                                </a>
+                                
                             </div>
-                        </div>
-                        </a>
-                    </div>
+                        </li>
+                    </ul>
+                    
                 </div>
-            </div>           
-        </section>
-
-
-
-        <section id="Catalog" class="p-5">
-          <div class="">
-              <div>
-                  
-              </div>
-              <div class="flex py-2 justify-center items-center">
-                  
-              </div> <br><br>
-              <div class="md:flex text-center items-center justify-center">
-                
-                  <img src="react.png" class="w-1/2 rounded-lg  shadow-xl">
-                  <div class="text-justify flex flex-col items-center justify-center">
-                    <h1 class="text-3xl font-bold " >React</h1>
-                      <p class=" p-10">React is a popular JavaScript library used for building user interfaces for web applications. It is often referred to as ReactJS or simply React. React makes it easier to create interactive and dynamic web pages by breaking them down into reusable components.</p>
-                      <a href="">
-                      <div class=" w-56 h-16 items-center bg-indigo-400 rounded-lg text-white font-bold justify-center flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300">
-                          <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank">Register Now</a>
-                          <div class="w-10 h-10 flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 font-bold h-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                          </div>
-                      </div>
-                      </a>
-                  </div>
-              </div>
-          </div>           
-      </section>
-
+            </div>
+            
+        </nav>
+    </header><main class="bg-slate-900">
+    <div class="fixed left-8 top-1/2 transform -translate-y-1/2 space-y-2 hidden md:block">
         
+        <a href="https://www.instagram.com/playwithcode1c" target="_blank" class="focus:outline-none block text-xl text-gray-700 hover:text-white transition">
+            <i class="ri-instagram-line"></i>
+        </a>
+        
+        <a href="https://www.linkedin.com/company/play-with-code" target="_blank" class="focus:outline-none block text-xl text-gray-700 hover:text-white transition">
+            <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://discord.gg/YPhrFGhajN" target="_blank" class="focus:outline-none block text-xl text-gray-700 hover:text-white transition">
+            <i class="ri-discord-fill"></i>
+        </a>
+    </div>
+     <section class="container mx-auto  text-white bg-white dark:bg-gray-900">
+        
+<div class="py-8 px-4 mx-auto max-w-screen-2xl sm:py-16 lg:px-6">
+    <h1 class="text-4xl font-bold mb-8 text-white text-center">Our Courses</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Course 1 -->
+            <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                <img src="python.png" alt="Course 1" class="rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-4">Python</h3>
+                <p class="mb-4">Python is a programming language that helps you tell a computer what to do. Imagine a computer as a super obedient robot that can do complex tasks very quickly, but it needs to be given very clear instructions. Python is one of the ways we give those instructions.</p>
+                <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank" class="flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Register
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>            </div>
 
-      <section id="Catalog" class="p-5">
-        <div class="">
-            <div>
-                
-            </div>
-            <div class="flex py-2 justify-center items-center">
-                
-            </div> <br><br>
-            <div class="md:flex text-center items-center justify-center">
-              
-                <img src="html.png" class="w-1/2 rounded-lg  shadow-xl">
-                <div class="text-justify flex flex-col items-center justify-center">
-                  <h1 class="text-3xl font-bold " >SQL</h1>
-                    <p class=" p-10">SQL (Structured Query Language) is a programming language used for managing and manipulating databases. It is a standard language that allows users to interact with databases by performing various operations such as querying, updating, inserting, and deleting data.</p>
-                    <a href="">
-                    <div class=" w-56 h-16 items-center bg-indigo-400 rounded-lg text-white font-bold justify-center flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300">
-                        <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank">Register Now</a>
-                        <div class="w-10 h-10 flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 font-bold h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                          </svg>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>           
-    </section>
+            <!-- Course 2 -->
+            <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                <img src="html.png" alt="Course 2" class="rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-4">Web Development & Design</h3>
+                <p class="mb-4">Web development and design involve the creation and maintenance of websites and web applications. It combines the technical skills of programming with the creative aspects of design to build functional and visually appealing online experiences.</p>
+                <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank" class="flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Register
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>            </div>
 
+            <!-- Course 3 -->
+            <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                <img src="sql.png" alt="Course 3" class="rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-4">SQL</h3>
+                <p class="mb-4">SQL (Structured Query Language) is a programming language used for managing and manipulating databases. It is a standard language that allows users to interact with databases by performing various operations such as querying, updating, inserting, and deleting data.</p>
+                <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank" class="flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Register
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>            </div>
 
+            <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                <img src="ps.png" alt="Course 1" class="rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-4">Adobe Photoshop</h3>
+                <p class="mb-4">Photoshop is a popular software tool used for editing and manipulating digital images. It provides a wide range of features and functions that enable users to enhance photos, create original artwork, and design graphics.</p>
+                <br><br><br><a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank" class="flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Register
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>            </div>
 
+            <!-- Course 2 -->
+            <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                <img src="pr.png" alt="Course 2" class="rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-4">Adobe Premiere Pro</h3>
+                <p class="mb-4">Adobe Premiere Pro is a popular video editing software used by professionals and enthusiasts to create and edit videos. It offers a range of features and tools that make the editing process efficient and creative.</p>
+                <br><br><br><a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank" class="flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Register
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>            </div>
 
-    <section id="Catalog" class="p-5">
-      <div class="">
-          <div>
-              
-          </div>
-          <div class="flex py-2 justify-center items-center">
-              
-          </div> <br><br>
-          <div class="md:flex text-center items-center justify-center">
-            
-              <img src="html.png" class="w-1/2 rounded-lg  shadow-xl">
-              <div class="text-justify flex flex-col items-center justify-center">
-                <h1 class="text-3xl font-bold " >Adobe Photoshop</h1>
-                  <p class=" p-10">Adobe Photoshop is a popular software tool used for editing and manipulating digital images. It provides a wide range of features and functions that enable users to enhance photos, create original artwork, and design graphics.</p>
-                  <a href="">
-                  <div class=" w-56 h-16 items-center bg-indigo-400 rounded-lg text-white font-bold justify-center flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300">
-                      <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank">Register Now</a>
-                      <div class="w-10 h-10 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 font-bold h-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                      </div>
-                  </div>
-                  </a>
-              </div>
-          </div>
-      </div>           
-  </section>
-
-
-
-
-
-  <section id="Catalog" class="p-5">
-    <div class="">
-        <div>
-            
-        </div>
-        <div class="flex py-2 justify-center items-center">
-            
-        </div> <br><br>
-        <div class="md:flex text-center items-center justify-center">
-          
-            <img src="html.png" class="w-1/2 rounded-lg  shadow-xl">
-            <div class="text-justify flex flex-col items-center justify-center">
-              <h1 class="text-3xl font-bold " >Adobe Premiere Pro</h1>
-                <p class=" p-10">Adobe Premiere Pro is a popular video editing software used by professionals and enthusiasts to create and edit videos. It offers a range of features and tools that make the editing process efficient and creative.</p>
-                <a href="">
-                <div class=" w-56 h-16 items-center bg-indigo-400 rounded-lg text-white font-bold justify-center flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300">
-                    <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank">Register Now</a>
-                    <div class="w-10 h-10 flex items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 font-bold h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </div>
-                </div>
+            <!-- Course 3 -->
+            <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                <img src="en.png" alt="Course 3" class="rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-4">Spoken English & Self-improvement</h3>
+                <p class="mb-4">Spoken English is about effectively communicating in English, honing pronunciation, vocabulary, grammar, and fluency, which can boost career opportunities and interactions with diverse individuals. Self-improvement centers on personal growth by identifying and enhancing areas like confidence, interpersonal skills, time management, and emotional understanding.</p>
+                <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank" class="flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Register
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </a>
             </div>
+</div>
+            <!-- ... Add more courses similarly -->
         </div>
-    </div>           
-</section>
-
-
-
-
-
-<section id="Catalog" class="p-5">
-  <div class="">
-      <div>
-          
-      </div>
-      <div class="flex py-2 justify-center items-center">
-          
-      </div> <br><br>
-      <div class="md:flex text-center items-center justify-center">
-        
-          <img src="html.png" class="w-1/2 rounded-lg  shadow-xl">
-          <div class="text-justify flex flex-col items-center justify-center">
-            <h1 class="text-3xl font-bold " >Spoken English and Self-improvement</h1>
-              <p class=" p-10">Spoken English and Self-improvement are two interconnected areas that focus on enhancing communication skills and personal growth.
-
-                Spoken English refers to the ability to speak and communicate effectively in the English language. It involves developing skills in pronunciation, vocabulary, grammar, and fluency. 
-                Learning to speak English well can open up opportunities for better communication, career prospects, and interaction with people from diverse backgrounds.</p>
-              <a href="">
-              <div class=" w-56 h-16 items-center bg-indigo-400 rounded-lg text-white font-bold justify-center flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300">
-                  <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank">Register Now</a>
-                  <div class="w-10 h-10 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 font-bold h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
-                  </div>
-              </div>
-              </a>
-          </div>
-      </div>
-  </div>           
-</section>
-
-
-     
-
-
-
-
-      
-
-
-
-   -->
-
-
+    </section>
    
-
-
-
-
-
-
-
-
-
-
-        </div>
-    </div>
-    
-                <section id="Catalog" class="p-10 flex py-2 justify-center items-center space-x-5">
-        <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" target="_blank">
-          <div class=" w-40 h-16 items-center bg-[#A6CE39] rounded-lg text-white font-bold justify-center flex transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-100 hover:bg-cyan-400 duration-300">
-              Register
-              <div class="w-10 h-10 flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 font-bold h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </div>
-          </div>
-          </a></section>
-    <br><br><br><br><br><br>
-    
-    <footer class="bg-white snap-y rounded-lg shadow dark:bg-gray-900 m-4">
-      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-10">
-          <div class="sm:flex sm:items-center sm:justify-between">
-              <a href="index.html" class="flex items-center mb-4 sm:mb-0">
-                  <img src="logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
-                  <p class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Play With Code</p>
-              </a>
-              <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                  <li>
-                      <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" class="mr-4 hover:underline md:mr-6 " target="_blank">Register</a>
-                  </li>
-                  <li>
-                      <a href="privacy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-                  </li>
-                  
-                  <li>
-                      <a href="https://discord.com/channels/1124636397718994994/1125362405946445824" class="hover:underline" target="_blank">Contact on Discord</a>
-                  </li>
-              </ul>
-          </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <p class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://linktr.ee/playwithcode1c" class="hover:underline" target="_blank">Play With Code</a>. All Rights Reserved.</p>
+    <button id="scrollTopButton" class="scroll-top-btn"><i class="ri-arrow-up-s-line"></i></button>
+  </main>
+  <footer class="bg-[#1F2937] ">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+              <img src="logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+              <p class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Play With Code</p>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="https://forms.gle/qAiKSvktFuh7Lz1d8" class="mr-4 hover:underline md:mr-6 " target="_blank">Register</a>
+              </li>
+              <li>
+                  <a href="privacy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+              </li>
+              
+              <li>
+                  <a href="https://discord.com/channels/1124636397718994994/1125362405946445824" class="hover:underline" target="_blank">Contact on Discord</a>
+              </li>
+          </ul>
       </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <p class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://linktr.ee/playwithcode1c" class="hover:underline" target="_blank">Play With Code</a>. All Rights Reserved.</p>
+  </div>
+</footer>
+    <script src="scrolltop.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </body>
 </html>
